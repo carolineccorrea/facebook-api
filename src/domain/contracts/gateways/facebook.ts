@@ -8,6 +8,10 @@ export namespace LoadFacebookUserApi {
   }
 
   //export type Result = AccessToken | AuthenticationError
-  export type Result = undefined
+  export type Result = undefined | {
+    facebookId: string,
+    email: string,
+    name: string
+  }
 }
 
